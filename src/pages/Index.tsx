@@ -732,7 +732,7 @@ const Index = () => {
                 </div>
                 <div className="flex items-center gap-3">
                   <MapPin className="w-5 h-5" />
-                  <span>Nairobi, Kenya</span>
+                  <span>Nakuru, Kenya</span>
                 </div>
               </div>
             </div>
@@ -741,7 +741,7 @@ const Index = () => {
           <div className="border-t border-white/20 mt-12 pt-8">
             <div className="flex flex-col md:flex-row justify-between items-center gap-4">
               <p className="text-primary-foreground/80">
-                &copy; 2024 CodeBest IT Solutions. All rights reserved.
+                &copy; 2025 CodeBest IT Solutions. All rights reserved.
               </p>
               <div className="flex gap-6 text-sm text-primary-foreground/80">
                 <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
