@@ -238,7 +238,7 @@ const Index = () => {
               <div className="space-y-6">
                 <Badge variant="secondary" className="px-4 py-2">
                   <Sparkles className="w-4 h-4 mr-2" />
-                  Transforming Ideas Since 2019
+                  Transforming Ideas Since 2022
                 </Badge>
                 <h1 className="text-6xl lg:text-7xl font-bold font-display leading-tight">
                   Turning <span className="bg-gradient-hero bg-clip-text text-transparent">ideas and data</span> into powerful digital solutions
@@ -626,7 +626,7 @@ const Index = () => {
                     </div>
                     <div>
                       <div className="font-semibold text-foreground text-lg">Location</div>
-                      <div className="text-muted-foreground">Nairobi, Kenya</div>
+                      <div className="text-muted-foreground">Nakuru, Kenya</div>
                       <div className="text-sm text-muted-foreground">Serving clients globally</div>
                     </div>
                   </div>
