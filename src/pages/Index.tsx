@@ -11,8 +11,14 @@ import {
   Settings, PenTool, CheckCircle2, Star, Zap, Shield, Clock, Users,
   TrendingUp, Award, Target, ArrowRight, Sparkles, Rocket, Globe,
   Database, Smartphone, Monitor, FileText, Quote, Play, ChevronRight,
-  Heart, Coffee, Lightbulb, Gauge
+  Heart, Coffee, Lightbulb, Gauge, Menu
 } from "lucide-react";
+import {
+  Sheet,
+  SheetContent,
+  SheetTrigger,
+  SheetClose
+} from "@/components/ui/sheet";
 import heroImage from "@/assets/hero-image.jpg";
 import teamImage from "@/assets/team-collaboration.jpg";
 import dataImage from "@/assets/data-analytics.jpg";
@@ -221,10 +227,44 @@ const Index = () => {
               <a href="#portfolio" className="text-foreground hover:text-primary transition-colors font-medium">Portfolio</a>
               <a href="#contact" className="text-foreground hover:text-primary transition-colors font-medium">Contact</a>
             </div>
-            <Button variant="hero" onClick={handleWhatsAppClick} className="animate-pulse-glow">
-              <MessageCircle className="w-4 h-4" />
-              Get Started
-            </Button>
+            <div className="flex items-center space-x-4">
+              <Button variant="hero" onClick={handleWhatsAppClick} className="hidden md:block animate-pulse-glow">
+                <MessageCircle className="w-4 h-4" />
+                Get Started
+              </Button>
+              <Sheet>
+                <SheetTrigger asChild>
+                  <Button variant="ghost" size="icon" className="md:hidden">
+                    <Menu className="h-6 w-6" />
+                  </Button>
+                </SheetTrigger>
+                <SheetContent side="right" className="w-[300px] sm:w-[400px]">
+                  <nav className="flex flex-col space-y-4 mt-8">
+                    <SheetClose asChild>
+                      <a href="#home" className="block px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors">Home</a>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <a href="#services" className="block px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors">Services</a>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <a href="#about" className="block px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors">About</a>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <a href="#portfolio" className="block px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors">Portfolio</a>
+                    </SheetClose>
+                    <SheetClose asChild>
+                      <a href="#contact" className="block px-4 py-2 text-sm font-medium text-foreground hover:text-primary transition-colors">Contact</a>
+                    </SheetClose>
+                    <div className="pt-4 border-t">
+                      <Button variant="hero" onClick={handleWhatsAppClick} className="w-full">
+                        <MessageCircle className="w-4 h-4 mr-2" />
+                        Get Started
+                      </Button>
+                    </div>
+                  </nav>
+                </SheetContent>
+              </Sheet>
+            </div>
           </div>
         </div>
       </nav>
